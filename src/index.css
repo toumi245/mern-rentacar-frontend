@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: azure;
+}
+.bs1{
+    box-shadow: rgba(14,30,37,0.12) 0px 2px 4px 0px,rgba(14,30,37,0.12) 0px 2px 16px 0px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: olivedrab;
+}
+.header{
+    padding: 10px;
+}
+.header .ant-btn{
+    box-shadow: none !important; 
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered !important;
+    padding: 5px 15px !important;
+    outline: none !important;
+}
+p{
+    margin: 5px !important;
+    text-align: left;
+    padding: 0;
+}
+.content{
+    min-height: 90vh;
+}
+.carimg{
+    height: 180px;
+    width: auto;
+    border-radius: 5px;
+    transform: translateY(-50px);
+
+}
+.btn1{
+    box-shadow: none !important; 
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered !important;
+    padding: 5px 15px !important;
+    outline: none !important;
+}
+.spinner{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    z-index: 1;
+}
+.car{
+    border-radius: 10px;
+    margin-top: 100px;
+    height: 160px;
+    transition: 0.2s;
+}
+.car:hover{
+    height: 220px;
+}
+.car:hover > .car-content{
+    opacity: 1;
+    transform: translateY(-30px);
+}
+.car-content{
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 0.3s;
+}
+.login{
+    background-color: aqua;
+    min-height: 100vh;
+}
+.login label , .login h1{
+    color:wheat ;
+}
+.carimg2{
+    height: 400px;
+    border-radius: 10px;
+    width:auto ;
+}
+svg{
+    height: 20px !important;
+    width: 20px !important;
+}

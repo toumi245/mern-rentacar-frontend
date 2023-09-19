@@ -1,0 +1,46 @@
+
+[{
+    "name":"Dacia",
+   "image":"https://catalogue.automobile.tn/big/2023/01/46876.png?t=1",
+    "capacity":"11",
+    "fuelType":"diesel",
+    "bookedTimeSlots":[
+        {"from":"",
+            "to":""
+        }
+    ],
+    "rentPerHour":"80dt"
+},{
+    "name":"Citroen C5",
+   "image":"https://www.challenges.fr/assets/img/2022/06/30/cover-r4x3w1200-63a0966356008-29859-1744797-k4-k1-4010173-jpg.jpg",
+    "capacity":"11",
+    "fuelType":"diesel",
+    "bookedTimeSlots":[
+        {"from":"",
+            "to":""
+        }
+    ],
+    "rentPerHour":"80dt"
+},{
+    "name":"Ford",
+   "image":"https://tunisieauto.tn/wp-content/uploads/2016/09/Paris_Motorshow_New_Ford_Fiesta_02-e1472849654665-1.jpg",
+    "capacity":"11",
+    "fuelType":"diesel",
+    "bookedTimeSlots":[
+        {"from":"",
+            "to":""
+        }
+    ],
+    "rentPerHour":"80dt"
+},{
+    "name":"Suzuki",
+   "image":"https://catalogue.automobile.tn/big/2021/07/45868.jpg?t=1686300983",
+    "capacity":"11",
+    "fuelType":"diesel",
+    "bookedTimeSlots":[
+        {"from":"",
+            "to":""
+        }
+    ],
+    "rentPerHour":"80dt"
+}]
