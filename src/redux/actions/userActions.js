@@ -9,7 +9,7 @@ export const userLogin=(reqObj)=>async dispatch=>{
         dispatch({type:'LOADING',payload:false})
 
         setTimeout(()=>{
-            window.location.href="/"
+            window.location.href="https://mern-rentacar-backend.onrender.com/"
         },500)
     } catch (error) {
         message.error('something want wrong')
@@ -23,7 +23,7 @@ export const userRegister=(reqObj)=>async dispatch=>{
         
         message.success("registration successful")
         setTimeout(()=>{
-            window.location.href="/login"
+            window.location.href="https://mern-rentacar-backend.onrender.com/login"
         },500)
     } catch (error) {
         message.error('something want wrong')
