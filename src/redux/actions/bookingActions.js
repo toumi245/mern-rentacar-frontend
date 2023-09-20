@@ -3,7 +3,7 @@ import { message } from "antd";
 export const bookCar=(reqObj)=>async dispatch=>{
     dispatch({type:"LOADING",payload:true})
     try {
-        await axios.post("https://mern-rentacar-backend.onrender.com/api/bookings/bookcar",reqObj)
+        await axios.post("/api/bookings/bookcar",reqObj)
         
         dispatch({type:"LOADING",payload:false})
         message.success('your car booked successfully')

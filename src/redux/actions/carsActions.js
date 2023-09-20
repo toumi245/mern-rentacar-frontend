@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllCars=()=>async dispatch=>{
     dispatch({type:"LOADING",payload:true})
     try {
-        const response=await axios.get("https://mern-rentacar-backend.onrender.com/api/cars/getAllCars")
+        const response=await axios.get("/api/cars/getAllCars")
         dispatch({type:"GET_ALL_CARS",payload:response.data})
         dispatch({type:"LOADING",payload:false})
     } catch (error) {
@@ -13,7 +13,7 @@ export const getAllCars=()=>async dispatch=>{
 export const getAllBookings=()=>async dispatch=>{
     dispatch({type:"LOADING",payload:true})
     try {
-        const response=await axios.get("https://mern-rentacar-backend.onrender.com/api/bookings/getAllbookings")
+        const response=await axios.get("/api/bookings/getAllbookings")
         dispatch({type:"GET_ALL_BOOKINGS",payload:response.data})
         dispatch({type:"LOADING",payload:false})
     } catch (error) {
@@ -23,7 +23,7 @@ export const getAllBookings=()=>async dispatch=>{
 export const addCar=(reqObj)=>async dispatch=>{
     dispatch({type:"LOADING",payload:true})
     try {
-        await axios.post("https://mern-rentacar-backend.onrender.com/api/cars/addcar",reqObj)
+        await axios.post("/api/cars/addcar",reqObj)
         dispatch({type:"LOADING",payload:false})
         message.success('New Car Added Successfully')
         setTimeout(()=>{
@@ -37,7 +37,7 @@ export const addCar=(reqObj)=>async dispatch=>{
 export const editCar=(reqObj)=>async dispatch=>{
     dispatch({type:"LOADING",payload:true})
     try {
-        await axios.post("https://mern-rentacar-backend.onrender.com/api/cars/editcar",reqObj)
+        await axios.post("/api/cars/editcar",reqObj)
         dispatch({type:"LOADING",payload:false})
         message.success('car details updated successfuly')
         setTimeout(()=>{
@@ -51,7 +51,7 @@ export const editCar=(reqObj)=>async dispatch=>{
 export const deleteCar=(reqObj)=>async dispatch=>{
     dispatch({type:"LOADING",payload:true})
     try {
-        await axios.post("https://mern-rentacar-backend.onrender.com/api/cars/deletecar",reqObj)
+        await axios.post("/api/cars/deletecar",reqObj)
         dispatch({type:"LOADING",payload:false})
         message.success('car deleted successfuly')
         setTimeout(()=>{
